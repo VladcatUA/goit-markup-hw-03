@@ -28,9 +28,8 @@ h6 {
 }
 
 .container {
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
     padding: 0;
 }
@@ -70,8 +69,6 @@ img {
 
 /**Header**/
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
     background-color: var(--color-header-cardsbackground);
 }
@@ -83,6 +80,7 @@ img {
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -125,6 +123,8 @@ img {
 
 .list-header,
 .list-address {
+    padding-top: 24px;
+    padding-bottom: 24px;
     gap: 40px;
 }
 
@@ -173,7 +173,7 @@ img {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    width: 496px;
+    max-width: 496px;
     letter-spacing: 0.02em;
     color: var(--color-h1-textbutton);
 }
@@ -186,7 +186,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
+    display: block;
     text-align: center;
     align-items: center;
     letter-spacing: 0.04em;
@@ -196,10 +196,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     left: 636px;
     top: 428px;
+    border: none;
 }
 
 .section-one-button:hover,
@@ -238,7 +239,7 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-nav-titles);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list-principles {
@@ -307,8 +308,11 @@ img {
 
 .footer-text {
     width: 264px;
-    margin-top: 17.5px;
     color: var(--color-footertext);
+}
+
+.footer-logos {
+    margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -319,11 +323,12 @@ img {
 /**List buttons**/
 
 .section-five-buttons {
+    padding-top: 96px;
+    padding-bottom: 120px;
     background: #E5E5E5;
 }
 
 .list-five-buttons {
-    padding-top: 96px;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
@@ -347,10 +352,21 @@ img {
     color: var(--color-logo-textbutton);
 }
 
+.button-items:hover,
+.button-items:focus {
+    border: 1px solid transparent;
+}
+
 .list-portfolio-card {
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
+    row-gap: 48px;
+}
+
+.container-potfolio-cards {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-cardsbackground {
@@ -363,12 +379,11 @@ img {
 .portfolio-photos {}
 
 .portfolio-items {
-    margin-top: 32px;
-    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
-    margin-top: 8px;
+
     margin-left: 16px;
     margin-bottom: 32px;
 }
