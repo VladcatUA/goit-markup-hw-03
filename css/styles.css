@@ -17,6 +17,24 @@ body {
     --color-hoverfocus-elements: #404BBF;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .link {
     text-decoration: none;
 }
@@ -46,12 +64,29 @@ body {
     color: var(--color-h1-textbutton);
 }
 
+img {
+    display: block;
+}
+
 /**Header**/
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
     background-color: var(--color-header-cardsbackground);
 }
 
+.header-container {
+    display: flex;
+
+}
+
+.header-nav {
+    display: flex;
+}
+
 .logo {
+
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -62,6 +97,10 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-logo-textbutton);
+}
+
+.logo-header {
+    margin-right: 76px;
 }
 
 .studio {
@@ -78,7 +117,15 @@ body {
 }
 
 .list {
+    display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-header,
+.list-address {
+    gap: 40px;
 }
 
 .header-items {
@@ -93,6 +140,7 @@ body {
     text-decoration: none;
     list-style: normal;
     font-style: normal;
+    margin-left: auto;
 }
 
 .address-items {
@@ -109,13 +157,23 @@ body {
 
 /**Section 1**/
 .section-one {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    justify-content: center;
     background-color: var(--color-darkbackground);
 }
 
+.container-section-one {
+    justify-content: center;
+}
+
 .section-one-h-one {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    width: 496px;
     letter-spacing: 0.02em;
     color: var(--color-h1-textbutton);
 }
@@ -129,10 +187,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     display: flex;
+    text-align: center;
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--color-h1-textbutton);
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 428px;
 }
 
 .section-one-button:hover,
@@ -142,7 +209,10 @@ body {
 
 /**Section 2**/
 
-.section-two {}
+.section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .section-items {
     font-weight: 500;
@@ -168,23 +238,46 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-nav-titles);
+    padding-bottom: 72px;
 }
 
-.section-two-items {}
+.list-principles {
+    gap: 24px;
+    justify-content: space-between;
 
-.section-two-text {}
+}
+
+.section-two-items {
+    margin-bottom: 8px;
+}
+
+.section-two-text {
+    width: 264px;
+}
 
 /**Section 3**/
 
-.section-three {}
+.section-three {
+    padding-bottom: 120px;
+}
 
+.list-section-three {
+    gap: 24px;
+}
 
 .section-three-photos {}
 
 /**Section 4**/
 
 .section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--color-buttonbackground);
+}
+
+.list-four-cardsbackground {
+    gap: 24px;
+    text-align: center;
 }
 
 .section-four-cardsbackground {
@@ -195,17 +288,26 @@ body {
 
 .section-four-photos {}
 
-.section-four-items {}
+.section-four-items {
+    margin-top: 32px;
+}
 
-.section-four-text {}
+.section-four-text {
+    margin-top: 8px;
+    padding-bottom: 32px;
+}
 
 /**Footer**/
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--color-darkbackground);
 }
 
 .footer-text {
+    width: 264px;
+    margin-top: 17.5px;
     color: var(--color-footertext);
 }
 
@@ -216,8 +318,15 @@ body {
 /**Portfolio**/
 /**List buttons**/
 
-.section-5buttons {
+.section-five-buttons {
     background: #E5E5E5;
+}
+
+.list-five-buttons {
+    padding-top: 96px;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .button-items {
@@ -232,17 +341,34 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    min-width: 69px;
+    height: 48px;
+    padding: 12px 24px;
     color: var(--color-logo-textbutton);
+}
+
+.list-portfolio-card {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .portfolio-cardsbackground {
     background: var(--color-header-cardsbackground);
     border: 1px solid #E7E9FC;
+    width: 360px;
 }
 
 
 .portfolio-photos {}
 
-.portfolio-items {}
+.portfolio-items {
+    margin-top: 32px;
+    margin-left: 16px;
+}
 
-.portfolio-text {}
+.portfolio-text {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
