@@ -29,10 +29,8 @@ h6 {
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
 }
 
 .link {
@@ -127,12 +125,15 @@ img {
     gap: 40px;
 }
 
+.elements-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-items {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 24px;
-    padding-bottom: 24px;
     letter-spacing: 0.02em;
     color: var(--color-nav-titles);
 }
@@ -329,6 +330,7 @@ img {
 
 .footer-logo {
     color: var(--color-footertext);
+    display: inline-block;
 }
 
 /**Portfolio**/
