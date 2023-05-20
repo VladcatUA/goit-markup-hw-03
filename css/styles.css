@@ -29,7 +29,8 @@ h6 {
 
 .container {
     width: 1158px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     padding: 0;
 }
@@ -123,8 +124,6 @@ img {
 
 .list-header,
 .list-address {
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
 }
 
@@ -132,6 +131,8 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
     letter-spacing: 0.02em;
     color: var(--color-nav-titles);
 }
@@ -248,6 +249,10 @@ img {
 
 }
 
+.element-list-principles {
+    width: calc((100% - 72px) / 4);
+}
+
 .section-two-items {
     margin-bottom: 8px;
 }
@@ -260,6 +265,10 @@ img {
 
 .section-three {
     padding-bottom: 120px;
+}
+
+.element-section-three {
+    width: calc((100% - 48px) / 3);
 }
 
 .list-section-three {
@@ -282,21 +291,23 @@ img {
 }
 
 .section-four-cardsbackground {
+    width: calc((100% - 72px) / 4);
     background: var(--background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
+.info-team-member {
+    padding: 32px 16px;
+}
+
 .section-four-photos {}
 
 .section-four-items {
-    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
-.section-four-text {
-    margin-top: 8px;
-    padding-bottom: 32px;
-}
+.section-four-text {}
 
 /**Footer**/
 
@@ -313,6 +324,7 @@ img {
 
 .footer-logos {
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo {
@@ -372,7 +384,7 @@ img {
 .portfolio-cardsbackground {
     background: var(--color-header-cardsbackground);
     border: 1px solid #E7E9FC;
-    width: 360px;
+    width: calc((100% - 48px) / 3);
 }
 
 
