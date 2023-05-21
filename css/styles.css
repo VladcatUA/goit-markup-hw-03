@@ -339,7 +339,6 @@ img {
 .section-five-buttons {
     padding-top: 96px;
     padding-bottom: 120px;
-    background: #E5E5E5;
 }
 
 .list-five-buttons {
@@ -396,8 +395,4 @@ img {
     margin-bottom: 8px;
 }
 
-.portfolio-text {
-
-    margin-left: 16px;
-    margin-bottom: 32px;
-}
+.portfolio-text {}
